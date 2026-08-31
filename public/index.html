@@ -193,7 +193,7 @@
       leads = await api('', { method: 'GET' });
       clearError();
     } catch (e) {
-      showError('Could not load leads from Airtable. Check the server\\'s environment variables. (' + e.message + ')');
+      showError('Could not load leads from Airtable. Check the server environment variables. (' + e.message + ')');
       leads = [];
     }
     $('ot-loading').style.display = 'none';
